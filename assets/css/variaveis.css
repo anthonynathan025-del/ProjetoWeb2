@@ -1,0 +1,28 @@
+:root{
+    --indigo-priamario: #4F46E5;
+    --indigo-escuro: #312E81; 
+    --cor-backgroundgeral: #F3F4F6;
+    --cor-cards: #FFFFFF;
+    --textos-gerais: #111827;
+    --texto-secundario: #6B7280;
+    --borda-sutil: #E5E7EB;
+    --sucesso: #16A34A;
+    --sucesso-fundo: #DCFCE7;
+    --alerta: #D97706;
+    --alerta-fundo: #FEF3C7;
+    --perigo: #DC2626;
+    --perigo-fundo: #FEE2E2;
+
+    --espaco-xs: 0.25rem;
+    --espaco-s: 0.5rem;
+    --espaco-m: 1rem;
+    --espaco-l: 1.5rem;
+    --espaco-xl: 2rem;
+    --espaco-xxl: 3rem;
+
+    --fonte-titulo: "Sora", sans-serif;
+    --fonte-corpo: "Inter", sans-serif;
+
+    --raio-padrao: 0.5rem;
+    --transicao-padrao: 0.3s;
+}
