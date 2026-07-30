@@ -25,11 +25,15 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: var(--espaco-m);
+    margin: var(--espaco-xl);
+    
 }
 
 .calls{
-    gap: var(--espaco-s)
-    
+    gap: var(--espaco-s);
+    background-color: var(--borda-sutil);
+    padding: var(--espaco-xxl);
 }
 
 .status{
