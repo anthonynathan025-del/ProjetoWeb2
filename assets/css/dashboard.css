@@ -11,38 +11,16 @@ body{
 
 .navbar{
     grid-area: navbar;
-    background-color: var(--indigo-escuro);
-    /* justify-content: space-between; */
-    height: 64px;
-    
-}
-
-.navbar-content{
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 0 var(--espaco-m);
-}
-
-.user-area{
-    
 }
 
 .sidebar{
     grid-area: sidebar;
-    width: 240px;
-            
 }
 
 .dashboard-content{
     grid-area: main;
 }
 
-img{
-    border-radius: 10%;
-}
 .main-calls{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
