@@ -40,6 +40,24 @@ body{
     grid-area: main;
 }
 
+<<<<<<< HEAD
 img{
     border-radius: 10%;
 }
+=======
+.main-calls{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.calls{
+    gap: var(--espaco-s)
+    
+}
+
+.status{
+    display: flex;
+    justify-content: space-between;
+}
+>>>>>>> 158eb51 (main dash)
