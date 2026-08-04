@@ -13,15 +13,38 @@ body{
     grid-area: navbar;
 }
 
+.navbar-content{
+    background-color: var(--indigo-primario);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 var(--espaco-m);
+}
+
+.user-area{
+    display: flex;
+    padding: var(--);
+
+}
+
+.aside > ul{
+    padding: var(--espaco-s);
+    margin: var(--espaco-s);
+}
+
+
 .sidebar{
     grid-area: sidebar;
 }
 
 .dashboard-content{
     grid-area: main;
+    background-color: var(--cor-backgroundgeral);
 }
 
-.main-calls{
+.main-calls {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -32,11 +55,17 @@ body{
 
 .calls{
     gap: var(--espaco-s);
-    background-color: var(--borda-sutil);
+    background-color: var(--cor-cards);
     padding: var(--espaco-xxl);
+    border: 2px solid var(--borda-sutil);
+    border-radius: var(--raio-padrao);
 }
 
 .status{
     display: flex;
     justify-content: space-between;
+    background-color: var(--borda-sutil);
+
 }
+
+
