@@ -1,11 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TicketFlow - #1042 Impressora não imprime documentos</title>
+
+    <link rel="stylesheet" href="assets/css/variaveis.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/componentes.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/detalhe.css">
 </head>
+
 <body>
-    
+
+    <header class="navbar">
+        <nav class="navbar-content">
+            <a href="index.html" class="logo">🎫 TicketFlow</a>
+
+            <div class="user-area">
+                <span>Rafael Nogueira</span>
+                <img src="https://i.pravatar.cc/32?img=68" alt="Foto de Rafael Nogueira">
+            </div>
+        </nav>
+    </header>
+
+    <div class="detail-layout">
+
+        <nav class="breadcrumb" aria-label="Caminho de navegação">
+            <a href="index.html">Chamados</a>
+            <span>/</span>
+            <span>#1042 Impressora não imprime documentos</span>
+        </nav>
+
+        <main class="ticket-detail">
+
+            <article class="ticket-card-detail">
+
+                <header class="ticket-header">
+                    <h1>Impressora não imprime documentos</h1>
+
+                    <div class="ticket-badges">
+                        <span class="badge badge-danger">🔴 Aberto</span>
+                        <span class="badge badge-danger">🔴 Alta</span>
+                    </div>
+                </header>
+
+                <div class="ticket-meta">
+                    <span class="meta-user">
+                        <img src="https://i.pravatar.cc/48?img=47" alt="Foto de Fernanda Lima">
+                        Fernanda Lima
+                    </span>
+
+                    <span>🖥️ Hardware</span>
+
+                    <time datetime="2026-07-14T14:32">
+                        Aberto em 14/07/2026 às 14:32
+                    </time>
+                </div>
+
+                <p class="ticket-description">
+                    A impressora do 3º andar não está imprimindo, aparece "sem papel" mesmo com o papel colocado.
+                </p>
+
+                <section class="history">
+                    <h2>Histórico</h2>
+
+                    <ul>
+                        <li class="history-item">
+                            <img src="https://i.pravatar.cc/48?img=47" alt="Foto de Fernanda Lima">
+
+                            <div>
+                                <p>
+                                    <strong>Fernanda Lima</strong> abriu o chamado
+                                </p>
+
+                                <time datetime="2026-07-14T14:32">
+                                    14/07/2026 às 14:32
+                                </time>
+
+                                <p>
+                                    A impressora do 3º andar não está imprimindo, aparece "sem papel" mesmo com o papel colocado.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="history-item">
+                            <img src="https://i.pravatar.cc/48?img=68" alt="Foto de Rafael Nogueira">
+
+                            <div>
+                                <p>
+                                    <strong>Rafael Nogueira</strong> comentou
+                                </p>
+
+                                <time datetime="2026-07-14T15:10">
+                                    14/07/2026 às 15:10
+                                </time>
+
+                                <p>
+                                    Verificado remotamente, sensor de papel pode estar sujo. Vamos enviar um técnico ao local.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="history-item">
+                            <img src="https://i.pravatar.cc/48?img=68" alt="Foto de Rafael Nogueira">
+
+                            <div>
+                                <p>
+                                    <strong>Rafael Nogueira</strong> atualizou o status para "Em andamento"
+                                </p>
+
+                                <time datetime="2026-07-14T16:05">
+                                    14/07/2026 às 16:05
+                                </time>
+
+                                <p>
+                                    Técnico a caminho, previsão de atendimento até às 17h.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="update-section">
+                    <h2>Adicionar atualização</h2>
+
+                    <form action="#" method="get" class="update-form">
+
+                        <div class="form-group">
+                            <label for="novo-status">Novo status</label>
+                            <select id="novo-status" name="novo-status" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="aberto">Aberto</option>
+                                <option value="em-andamento">Em andamento</option>
+                                <option value="resolvido">Resolvido</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comentario">Comentário</label>
+                            <textarea
+                                id="comentario"
+                                name="comentario"
+                                rows="4"
+                                required
+                                minlength="10"
+                                placeholder="Descreva a atualização do chamado"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            Enviar atualização
+                        </button>
+
+                    </form>
+                </section>
+
+            </article>
+
+        </main>
+
+        <aside class="ticket-aside">
+
+            <section class="side-card">
+                <h2>Detalhes do chamado</h2>
+
+                <dl class="detail-list">
+                    <div>
+                        <dt>Status</dt>
+                        <dd><span class="badge badge-danger">Aberto</span></dd>
+                    </div>
+
+                    <div>
+                        <dt>Prioridade</dt>
+                        <dd><span class="badge badge-danger">Alta</span></dd>
+                    </div>
+
+                    <div>
+                        <dt>Categoria</dt>
+                        <dd>🖥️ Hardware</dd>
+                    </div>
+
+                    <div>
+                        <dt>Departamento</dt>
+                        <dd>TI</dd>
+                    </div>
+
+                    <div>
+                        <dt>Aberto em</dt>
+                        <dd>
+                            <time datetime="2026-07-14T14:32">
+                                14/07/2026 14:32
+                            </time>
+                        </dd>
+                    </div>
+
+                    <div>
+                        <dt>Última atualização</dt>
+                        <dd>
+                            <time datetime="2026-07-14T16:05">
+                                14/07/2026 16:05
+                            </time>
+                        </dd>
+                    </div>
+
+                    <div>
+                        <dt>Responsável</dt>
+                        <dd class="responsible">
+                            <img src="https://i.pravatar.cc/48?img=68" alt="Foto de Rafael Nogueira">
+                            Rafael Nogueira
+                        </dd>
+                    </div>
+                </dl>
+            </section>
+
+            <section class="side-card">
+                <h2>Ações rápidas</h2>
+
+                <div class="quick-actions">
+                    <button type="button" class="btn btn-secondary">Reatribuir chamado</button>
+                    <button type="button" class="btn btn-secondary">Marcar como urgente</button>
+                    <button type="button" class="btn btn-danger">Fechar chamado</button>
+                </div>
+            </section>
+
+        </aside>
+
+    </div>
+
 </body>
+
 </html>

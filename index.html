@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="assets/css/componentes.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
-    
 </head>
 
 <body>
@@ -41,7 +40,14 @@
 
     <main class="dashboard-content">
 
-        <h2>Meus chamados</h2>
+      <section class="dashboard-header">
+    <h1>Meus chamados</h1>
+
+    <div class="dashboard-actions">
+        <input type="search" placeholder="Buscar chamado...">
+        <a href="#" class="new-ticket">➕ Novo chamado</a>
+    </div>
+    </section>
 
        <section class="kpis">
             <div class="kpi-card">
@@ -74,8 +80,8 @@
 
                 <div class="calls">
                     <div class="status">
-                        <span>🔴 Aberto</span>
-                        <span>🔴 alta</span>
+                        <span class="badge danger">🔴 Aberto</span>
+                        <span class="badge danger">🔴 Alta</span>
                     </div>
                     <strong>Impressora não imprime documentos</strong>
                     <p>🖥️ Hardware</p>
@@ -83,8 +89,8 @@
 
                 <div class="calls">
                     <div class="status">
-                        <span>🟡 Em andamento</span>
-                        <span>🟡 Média</span>
+                       <span class="badge alert">🟡 Em andamento</span>
+                       <span class="badge alert">🟡 Média</span>
                     </div>
                     <strong>Sistema de ponto travando ao registrar entrada</strong>
                     <p>💾 Software</p>
@@ -92,8 +98,8 @@
 
                 <div class="calls">
                     <div class="status">
-                        <span>🟢 Resolvido</span>
-                        <span>🟢 Baixa</span>
+                        <span class="badge success">🟢 Resolvido</span>
+                        <span class="badge success">🟢 Baixa</span>
                     </div>
                     <strong>Solicitação de novo monitor</strong>
                     <p>🖱️ Equipamento</p>
@@ -101,8 +107,8 @@
 
                 <div class="calls">
                     <div class="status">
-                        <span>🔴 Aberto</span>
-                        <span>🔴 alta</span>
+                         <span class="badge danger">🔴 Aberto</span>
+                        <span class="badge danger">🔴 Alta</span>
                     </div>
                     <strong>VPN não conecta fora da impresa</strong>
                     <p>📶 Rede</p>
@@ -110,8 +116,8 @@
 
                 <div class="calls">
                     <div class="status">
-                        <span>🟡 Em andamento</span>
-                        <span>🟡 Média</span>
+                        <span class="badge alert">🟡 Em andamento</span>
+                        <span class="badge alert">🟡 Média</span>
                     </div>
                     <strong>E-Mail corporativo não sincroniza no celular</strong>
                     <p>💾 Software</p>
@@ -119,8 +125,8 @@
 
                 <div class="calls">
                     <div class="status">
-                        <span>🟢 Resolvido</span>
-                        <span>🟢 Baixa</span>
+                        <span class="badge success">🟢 Resolvido</span>
+                        <span class="badge success">🟢 Baixa</span>
                     </div>
                     <strong>Troca de cadeira ergonômica</strong>
                     <p>🖱️ Infraestrutura</p>
